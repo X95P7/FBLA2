@@ -1,0 +1,188 @@
+body{
+background-color: white;
+margin: 0%;
+overflow-x: hidden;
+}
+
+#header{
+	z-index: 999;
+	height: 17%;
+	width: 100%;
+	top: 0;
+	 background-color:white;
+	 padding-bottom:1%;
+	
+}
+
+.header{
+	background-color: white;
+	height: 60%;
+	display:flex;
+	border: 1px solid black;
+}
+
+#headerLogoWrapper{
+	width: 100%;
+	height: 40%;
+	display:flex;
+	justify-content: center;
+	padding: 0.5% 0% 0.5% 0%;
+}
+
+#headerPagesWrapper{
+	width:100%;
+	height:50%;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.headerButton {
+    background-color: lightgrey;
+    border-radius: 5%;
+    text-align: center;
+    width: 12%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+	transition: 0.5s;
+}
+
+.headerButton:hover{
+	background-color: #b8e3ff;
+}
+
+#wrapper{
+	width: 94%;
+	padding: 0% 3% 0.5% 3%;
+}
+
+#slideshow{
+	width: 110%;
+	margin: 0% -3.5% 0% -3.5%;
+}
+
+#slideshowCanvas{
+	height: 75%;
+	width: 100%%;}
+	
+	#block1{
+		height:40vw;
+margin: 5% 0 5% 0;
+   padding: 0 0 0 3%;
+background-color: white;
+box-shadow: 5vw 0vw 9vw #d6d6d6;	
+transition: 0.5s;
+border: 1.5vw solid #e3688b;
+border-style: none none none solid;
+border-radius: 1vw;
+display: flex;
+align-items: center;
+	}
+	
+	#block1:hover{
+	box-shadow: 5vw 0vw 20vw #d6d6d6;
+	}
+	
+#block1txt{
+	height: 100%;
+	width: 60vw;
+	overflow:hidden;
+	text-decoration: none;
+	color: black;
+}
+
+#block1txt p{
+	font-family: helvetica;
+	font-size: 2.3vw;
+}
+
+.head{
+	font-family: "Courier New";
+	font-size: 3vw;
+}
+
+#block1img{
+	margin-left: 3vw;
+	height: 35vw;
+}
+
+#aboutButton{
+	clip-path: polygon(90% 0, 95% 0, 100% 50%, 95% 100%, 90% 100%, 95% 50%);
+    background-color: gray;
+    text-align: center;
+    width: 50vw;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+	transition: 0.5s;
+}
+
+#block1txt:hover #aboutButton{
+background-color: lightblue;
+margin-left: 5vw;}
+
+
+.normalA {
+   color: black;
+   text-decoration: none;
+}
+
+#pagesTable{
+	display: inline-flex;
+	height: 20vw;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+.tableBox{
+		height:10vw;
+		width:25%;
+	margin: 5% 0 5% 0;
+	background-color: white;
+	box-shadow: 1vw 0vw 9vw #d6d6d6;	
+	transition: 0.5s;
+	border-left: 1.5vw solid #6acdde;
+	border-right: 0vw solid #6acdde;
+	border-style: none solid none solid;
+	border-radius: 1vw;
+	text-align:center;
+	transition: 0.5s ease-in-out;
+}
+
+	.tableBox:hover{
+	box-shadow: 1vw 0vw 20vw #d6d6d6;
+		border-right: 1.5vw solid #6acdde;
+	}
+
+
+#poem{
+	height:10vw;
+		width:100%;
+	margin: 5% 0 5% 0;
+	border: 0.15vw solid #DADADA;
+	border-style: solid none solid none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#poem p{
+	text-align:center;
+	color: #8C8C8C;
+	font-style: italic;
+}
+
+
+#footer {
+	background-color: #F1F1F1;
+	width: 100%;
+	display:inline-block;
+	bottom: 0%;
+}
+
+	
