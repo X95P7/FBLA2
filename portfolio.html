@@ -1,0 +1,126 @@
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="phot.css">
+<link rel="stylesheet" type="text/css" href="port.css">
+<script src="port.js"></script>
+<title> FBLA 2</title>
+</head>
+				
+<body onload="">		
+
+<div id="header">
+	<div id="headerLogoWrapper">
+		<img src="Logo.png" id="headerLogo">    <!--1000px x 200px-->
+	</div>
+	
+	<div id="headerPagesWrapper">
+			<a class="headerButton" id="headerHome">Home</a>
+			<a class="headerButton" id="headerPortfolios">Portfolios</a>
+			<a class="headerButton" id="headerAboutMe">About Me</a>
+			<a class="headerButton" id="headerMyGoal">My Goal</a>
+			<a class="headerButton" id="headerContact">Contact</a>
+	</div>
+</div>
+
+<div id="wrapper">
+
+	<div id="port1wrapper1" class="h40 portWrapper" style="height: auto;">
+		<div id="port1Title">
+			<button id="b1" class="button" onClick="toggleHeight(this)" style="height:40%;"> 
+				<p class="portTitle"> Pine Tree</p> 
+			</button>
+		</div>
+		
+		<div id="port1Slideshow" class="slideshow">
+				<div id="port1ButtonLeft" class="buttonLeft">
+					<button class="buttonPort" id="ButtonL1" onclick="slideshow(this)"> <p> &#129128 </p> </button>
+				</div>
+				
+				<div id="port1Images" class="portImages">
+					<div id="port1Circles" class="cirlceList">
+							<button class="buttonList" id="port1ButtonList1"></button>   
+							<button class="buttonList" id="port1ButtonList1"></button>
+							<button class="buttonList" id="port1ButtonList1"></button>
+							<button class="buttonList" id="port1ButtonList1"></button>
+							<button class="buttonList" id="port1ButtonList1"></button>
+					</div>
+				
+					<img id="11" src="Slideshow/ss1.jpg" class="images hidden" >
+					<img id="12" src="Slideshow/ss2.jpg" class="images hidden" >
+					<img id="13" src="Slideshow/ss3.jpg" class="images hidden" >
+					<img id="14" src="Slideshow/ss4.jpg" class="images hidden">
+					<img id="15" src="Slideshow/ss5.jpg" class="images show">
+					
+				</div>
+				
+				<div id="port1ButtonRight" class="buttonRight">
+					<button class="buttonPort"  id="ButtonR1" onclick="slideshow(this)"> <p> &#129130 </p> </button>
+				</div>
+				
+				<div id="port1Text" class="niceText">
+					<p> "wOw this picture changed my life"</p>
+				</div>
+		</div>
+	</div>
+	
+	
+	<div id="port2wrapper2" class="h40 portWrapper" style="height: auto;">
+		<div id="port2Title">
+			<button id="b2" class="button" style="background-image: url('Slideshow/ss3.jpg');" onClick="toggleHeight(this)"> 
+				<p class="portTitle"> Extravaganza</p> 
+			</button>	
+		</div>
+		
+		<div id="port2Slideshow" class="slideshow">
+				<div id="port2ButtonLeft" class="buttonLeft">
+					<button class="buttonPort" id="ButtonL2" onclick="slideshow(this)"> <p> &#129128 </p> </button>
+				</div>
+				
+				<div id="port2Images" class="portImages">
+					<div id="port2Circles" class="cirlceList">
+							<button class="buttonList" id="port1ButtonList1"></button>   
+							<button class="buttonList" id="port1ButtonList1"></button>
+							<button class="buttonList" id="port1ButtonList1"></button>
+							<button class="buttonList" id="port1ButtonList1"></button>
+							<button class="buttonList" id="port1ButtonList1"></button>
+					</div>
+				
+					<img id="21" src="Slideshow/ss1.jpg" class="images hidden" >
+					<img id="22" src="Slideshow/ss2.jpg" class="images hidden" >
+					<img id="23" src="Slideshow/ss3.jpg" class="images hidden" >
+					<img id="24" src="Slideshow/ss4.jpg" class="images hidden">
+					<img id="25" src="Slideshow/ss5.jpg" class="images show">
+					
+				</div>
+				
+				<div id="port2ButtonRight" class="buttonRight">
+					<button class="buttonPort"  id="ButtonR2" onclick="slideshow(this)"> <p> &#129130 </p> </button>
+				</div>
+				
+				<div id="port2Text" class="niceText">
+					<p> "wOw this picture is changing my life"</p>
+				</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+</div>
+<div>
+ <p>
+ 
+ help</p>
+</div>
+
+
+<footer id="footer">
+<div id="fWrap" class="foot">
+	<p>ily </p>
+	</div>
+</footer>
+		
+</body>
+</HTML>

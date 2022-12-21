@@ -11,6 +11,7 @@ var poolUsage = 2;
 var hold1 = "Slideshow/ss5.jpg"
 var hold2 = "Slideshow/ss6.jpg";
 
+window.devicePixelRatio=2;
 
 function pTpG(pres, w){ //wanted precentage vaule, width(t) of height(f);
 	var val;
@@ -28,10 +29,11 @@ function resizeCanvasG(){
 	windowPXLength = window.innerWidth;
     windowPXHeight = window.innerHeight;
 	
-	canvas.width =  canvasWidth * windowPXLength;  //percent of screen to be taken up
-	canvas.height = canvasHeight *  windowPXHeight;
+	canvas.width =  canvasWidth * windowPXLength * 2;  //percent of screen to be taken up
+	canvas.height = canvasHeight *  windowPXHeight * 2;
 	
-	//redraw static graph 
+	
+	//redraw static image 
 	drawMain();
 }
 
@@ -42,8 +44,8 @@ function onLoad(){
 	
 	//get document elements
 	canvas = document.getElementById("slideshowCanvas");
-	canvas.width =  canvasWidth * windowPXLength;  
-	canvas.height = canvasHeight *  windowPXHeight;
+	canvas.width =  canvasWidth * windowPXLength * 2;  
+	canvas.height = canvasHeight *  windowPXHeight * 2;
 	ctx = canvas.getContext("2d");
 	console.log("main");
 	drawMain();
@@ -55,7 +57,7 @@ function drawMain(){
 	var img = document.createElement('img');
 	
 	var imgXval = (tick % (2 * canvas.width)) - canvas.width;
-		if(Math.abs(imgXval-1032) < 0.5){
+		if(Math.abs(imgXval-1600) < 35.5){
 			hold1 = randomImg();
 			console.log("change");
 	}
@@ -68,7 +70,7 @@ function drawMain(){
 	
 	var img2 = document.createElement('img');
 	var img2Xval =(tick + canvas.width) % (2 * canvas.width) - canvas.width;
-				if(Math.abs(img2Xval-1032) < 0.5){
+				if(Math.abs(img2Xval-1600) < 35.5){
 			hold2 = randomImg();
 			console.log("change2");
 		}
@@ -81,23 +83,24 @@ function drawMain(){
 	var c = 1 + (Math.abs(((( tick) % canvas.width) - canvas.width) / (canvas.width)) - 0.95);
 	tick +=  c * 16;
 	
-	ctx.globalAlpha = 0.5;
+	ctx.globalAlpha = 0.2;
 	ctx.fillStyle = "#ababab";
 	ctx.fillRect(0,0, pTpG(100, "w"),pTpG(100, "h"));
 	
-	
+	//text
+	var scale = window.devicePixelRatio;
 	ctx.font = pTpG(5,"w") + "px Oswald";
 				ctx.globalAlpha = 1;
 				ctx.fillStyle = "white";
 				var adjust = ctx.measureText("Photography").width;
-				ctx.fillText("Photography", (pTpG(100,"w") / 4.3) - (adjust / 2),pTpG(55,"h"));
+				ctx.fillText("Photography", (pTpG(100,"w") / 4.3) - (adjust / 1.3),pTpG(30,"h"));
 }
 
 function randomImg(){
 	var rand =  Math.floor(Math.random() * imagePool.length - 1) + 1;
-	var tempt = imagePool.splice(rand,1);
-	imagePool.splice(0,0,tempt[0]);
-	return imagePool[0];
+	//var tempt = imagePool.splice(rand,1);
+	//imagePool.splice(0,0,tempt[0]);
+	return imagePool[rand];
 }
 
 	

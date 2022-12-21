@@ -1,16 +1,17 @@
 body{
 background-color: white;
-margin: 0%;
+margin: 0% 3% 0% 3%;
 overflow-x: hidden;
 }
 
 #header{
 	z-index: 999;
 	height: 17%;
-	width: 100%;
+	width: 106.4%;
 	top: 0;
 	 background-color:white;
 	 padding-bottom:1%;
+	 margin: 0 -3.15% 0 -3.15%;
 	
 }
 
@@ -60,8 +61,8 @@ overflow-x: hidden;
 }
 
 #slideshow{
-	width: 110%;
-	margin: 0% -3.5% 0% -3.5%;
+	width: 100%;
+	margin: 0% 0% 0% -3.5%;
 }
 
 #slideshowCanvas{
@@ -179,10 +180,9 @@ margin-left: 5vw;}
 
 
 #footer {
+	margin: 0% -3% 0% -3.1%;
 	background-color: #F1F1F1;
-	width: 100%;
+	width: 108%;
 	display:inline-block;
 	bottom: 0%;
 }
-
-	
