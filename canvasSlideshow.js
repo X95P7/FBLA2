@@ -1,8 +1,8 @@
 var windowPXLength = window.innerWidth;
 var windowPXHeight = window.innerHeight;
 var canvas;
-var canvasWidth = 0.88; //in percenatges
-var canvasHeight = 0.3;
+var canvasWidth = 0.5; //in percenatges
+var canvasHeight = 0.125;
 var ctx;
 var tick = 0;
 
@@ -29,8 +29,8 @@ function resizeCanvasG(){
 	windowPXLength = window.innerWidth;
     windowPXHeight = window.innerHeight;
 	
-	canvas.width =  canvasWidth * windowPXLength * 2;  //percent of screen to be taken up
-	canvas.height = canvasHeight *  windowPXHeight * 2;
+	canvas.width =  (canvasWidth * windowPXLength * 2) ; 
+	canvas.height = (canvasWidth * windowPXLength * 2) / (canvasWidth / canvasHeight) ;
 	
 	
 	//redraw static image 
@@ -44,8 +44,8 @@ function onLoad(){
 	
 	//get document elements
 	canvas = document.getElementById("slideshowCanvas");
-	canvas.width =  canvasWidth * windowPXLength * 2;  
-	canvas.height = canvasHeight *  windowPXHeight * 2;
+	canvas.width =  (canvasWidth * windowPXLength * 2); 
+	canvas.height = (canvasWidth * windowPXLength * 2) / (canvasWidth / canvasHeight);
 	ctx = canvas.getContext("2d");
 	console.log("main");
 	drawMain();
@@ -57,26 +57,26 @@ function drawMain(){
 	var img = document.createElement('img');
 	
 	var imgXval = (tick % (2 * canvas.width)) - canvas.width;
-		if(Math.abs(imgXval-1600) < 35.5){
+		if(Math.abs(imgXval-(windowPXLength * 2 * canvasWidth)) < 3.5){
 			hold1 = randomImg();
 			console.log("change");
 	}
 		img.src = hold1
 		img.height = (canvas.width / img.width) * img.height;
 	
-	ctx.drawImage(img, imgXval, img.height / -2, 0.98 * canvas.width, img.height * 1.833333);
+	ctx.drawImage(img, imgXval, img.height / -1.3, 0.99 * canvas.width, img.height * 1.833333);
 	
 	
 	
 	var img2 = document.createElement('img');
 	var img2Xval =(tick + canvas.width) % (2 * canvas.width) - canvas.width;
-				if(Math.abs(img2Xval-1600) < 35.5){
+				if(Math.abs(img2Xval-(windowPXLength * 2 * canvasWidth)) < 3.5){
 			hold2 = randomImg();
 			console.log("change2");
 		}
 		img2.src = hold2;
 		img2.height =  canvas.width / img2.width * img2.height;
-		ctx.drawImage(img2, img2Xval, img2.height / -1.3, 0.95 * canvas.width, img2.height * 1.833333);
+		ctx.drawImage(img2, img2Xval, img2.height / -1.3, 0.99 * canvas.width, img2.height * 1.833333);
 	
 	
 	
@@ -89,11 +89,11 @@ function drawMain(){
 	
 	//text
 	var scale = window.devicePixelRatio;
-	ctx.font = pTpG(5,"w") + "px Oswald";
+	ctx.font = pTpG(5,"w") + "px skinny";
 				ctx.globalAlpha = 1;
 				ctx.fillStyle = "white";
-				var adjust = ctx.measureText("Photography").width;
-				ctx.fillText("Photography", (pTpG(100,"w") / 4.3) - (adjust / 1.3),pTpG(30,"h"));
+				var adjust = ctx.measureText("There's Bueaty in evertything").width * 1.1;
+				ctx.fillText("There's Bueaty in evertything", (pTpG(100,"w") - adjust) / 2,pTpG(55,"h"));
 }
 
 function randomImg(){
