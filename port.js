@@ -34,19 +34,18 @@ function slideshow(me){
 	
 	var dir = id.substring(length-2,length-1);
 	
-	var circle = document.getElementById("port" + portId + "Circles");
-	var circleChildren = circle.childNodes;
+	//var circle = document.getElementById("port" + portId + "Circles");
+	//var circleChildren = circle.childNodes;
 	
 	//find chirldren with class images
 	var withinReason = [];
-	var withinCircle = [];
+	//var withinCircle = [];
 	for(var i = 0; i < portChildren.length - 1; i++){
 		if(i % 2 == 1){
 			withinReason[withinReason.length] = portChildren[i];
-			withinCircle[withinCircle.length] = circleChildren[i];
+			//withinCircle[withinCircle.length] = circleChildren[i];
 		}
 	}
-	withinReason.splice(0, 1);
 	
 	//find whihc one is not hidden
 	var shown  = 0;
@@ -55,7 +54,7 @@ function slideshow(me){
 			withinReason[i].classList.remove("show");
 			withinReason[i].classList.add("hidden");
 			
-			withinCircle[i].classList.remove("green");
+			//withinCircle[i].classList.remove("green");
 			shown = i;
 		}
 	}
@@ -81,7 +80,7 @@ function slideshow(me){
 	 withinReason[shown].classList.remove("hidden");
 	 withinReason[shown].classList.add("show");
 	 
-	 withinCircle[shown].classList.add("green");
+	 //withinCircle[shown].classList.add("green");
 	
 }
 

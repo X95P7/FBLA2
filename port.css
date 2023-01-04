@@ -24,17 +24,14 @@
 	height: 30vh;
 }
 }
-
+*/
 @media only screen and (max-width: 900px) {
-  .h80 {
-   height: 70vh;
-  }
-  
-  .h40 {
-	height: 30vh;
+.button{
+	background-attachment:initial;
+	background-size:cover;
 }
 }
-
+/*
 @media only screen and (max-width: 600px) {
   .h80 {
    height: 50vh;
@@ -47,6 +44,8 @@
   */
 
 .button{
+	border-radius:2vw;
+	background-size:cover;
 	border: none;
 	width: 100%;
 	height: 40vh;
@@ -58,6 +57,7 @@
 	justify-content: center;
 	background-image: url("Slideshow/ss1.jpg");
 }
+
 
 .button p{
 	text-allign:center;
@@ -81,11 +81,6 @@
 
 .hidden{
 	opacity:0;
-}
-
-@font-face {
-  font-family: skinny;
-  src: url(nectar.otf);
 }
 
 .buttonLeft{
@@ -137,13 +132,21 @@ margin: -0.13vw 0px 0px -0.16vw;
 
 
 
-.images{
+.imagesH{
+	width:100%;
 	height:100%;
-	width: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
-	transition: 0.5s;
+	transition: 0.9s;
+}
+
+.imagesP{
+	position: absolute;
+	height:100%;
+	left: 23.1%;
+	top: 0;
+	transition: 0.9s;
 }
 
 .show{
@@ -155,11 +158,6 @@ p{
 	font-size: 2.5vw;
 }
 
-.niceText p{
-	text-align:center;
-	color: #8C8C8C;
-	font-style: italic;
-}
 
 
 .buttonList{
@@ -186,7 +184,7 @@ p{
 .cirlceList{
 		width:100%;
 	height:20%;
-	margin-top: 62%;
+	margin-top: 66%;
     display: flex;
     justify-content: space-around;
     z-index: 9;

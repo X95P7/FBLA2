@@ -1,5 +1,7 @@
 body{
-background-color: white;
+background-image: url('BackTest4.png');
+background-size: cover;
+background-attachment: fixed;
 margin: 0% 3% 0% 3%;
 overflow-x: hidden;
 }
@@ -30,6 +32,10 @@ overflow-x: hidden;
 	padding: 0.5% 0% 0.5% 0%;
 }
 
+#headerLogo{
+	height:100%;
+}
+
 #headerPagesWrapper{
 	width:100%;
 	height:50%;
@@ -49,11 +55,19 @@ overflow-x: hidden;
     align-items: center;
     padding: 1%;
 	transition: 0.5s;
+	font-size: 1.7vw;	
 }
 
 .headerButton:hover{
 	background-color: #b8e3ff;
+	color:black;
 }
+
+.headerSelected{
+	background-color: darkblue;
+	color:white;
+}
+
 
 #wrapper{
 	width: 94%;
@@ -61,31 +75,55 @@ overflow-x: hidden;
 }
 
 #slideshow{
+	border-radius:2vw;
+	overflow:hidden;
 	width: 100%;
-	margin: 0% 0% 0% -3.5%;
 }
 
 #slideshowCanvas{
-	height: 75%;
-	width: 100%%;}
+
+	}
 	
 	#block1{
 		height:40vw;
+		width:89.25%;
 margin: 5% 0 5% 0;
-   padding: 0 0 0 3%;
+   padding: 3vw 5vw 3vw 5vw;
 background-color: white;
-box-shadow: 5vw 0vw 9vw #d6d6d6;	
+box-shadow: 0vw 0vw 9vw #d6d6d6;	
 transition: 0.5s;
-border: 1.5vw solid #e3688b;
-border-style: none none none solid;
-border-radius: 1vw;
 display: flex;
 align-items: center;
+position: relative;
 	}
 	
 	#block1:hover{
-	box-shadow: 5vw 0vw 20vw #d6d6d6;
+	box-shadow: 0vw 0vw 20vw #d6d6d6;
 	}
+	
+#block1:after {
+    padding: 0%;
+    content: "";
+    width: 10vw;
+    position: absolute;
+    left: 3vw;
+    top: 3vw;
+    border: 0.2vw solid #5294ff;
+    height: 10vw;
+    border-style: solid none none solid;
+}	
+
+#block1:before {
+    padding: 0%;
+    content: "";
+    width: 10vw;
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+    border: 0.2vw solid #5294ff;
+    height: 10vw;
+    border-style: none solid solid none;
+}
 	
 #block1txt{
 	height: 100%;
@@ -110,7 +148,7 @@ align-items: center;
 	height: 35vw;
 }
 
-#aboutButton{
+.aboutButton{
 	clip-path: polygon(90% 0, 95% 0, 100% 50%, 95% 100%, 90% 100%, 95% 50%);
     background-color: gray;
     text-align: center;
@@ -123,7 +161,7 @@ align-items: center;
 	transition: 0.5s;
 }
 
-#block1txt:hover #aboutButton{
+#block1txt:hover .aboutButton{
 background-color: lightblue;
 margin-left: 5vw;}
 
@@ -153,6 +191,12 @@ margin-left: 5vw;}
 	border-radius: 1vw;
 	text-align:center;
 	transition: 0.5s ease-in-out;
+	display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 	.tableBox:hover{
@@ -170,7 +214,9 @@ margin-left: 5vw;}
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-}
+	background-color: rgb(255,255,255,0.98);
+	box-shadow: 0vw 0vw 4vw 1vw #ffffff;
+	}
 
 #poem p{
 	text-align:center;
@@ -178,6 +224,29 @@ margin-left: 5vw;}
 	font-style: italic;
 }
 
+.cardButtonDiv{
+	width: 50%;
+	height: 15%;
+	opacity:0;
+	background-color: lightblue;
+	border-radius: 5%;
+	transition: 0.5s;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.box:hover .cardButtonDiv{
+	opacity:1;
+}
+
+.magicButton {
+	width: 100%;
+	border: none;
+	background: none;
+	text-decoration:none;
+	text-align: center;
+}
 
 #footer {
 	margin: 0% -3% 0% -3.1%;
@@ -185,4 +254,47 @@ margin-left: 5vw;}
 	width: 108%;
 	display:inline-block;
 	bottom: 0%;
+}
+
+.niceText{
+	font-size: 1vw;
+	text-align:center;
+	color: #8C8C8C;
+	font-style: italic;
+}
+
+.tableText{
+		font-size: 2vw;
+	text-align:center;
+}
+
+.tableText2{
+		font-size: 1.5vw;
+	text-align:center;
+	color: #8C8C8C;
+}
+
+@font-face {
+  font-family: skinny;
+  src: url(nectar.otf);
+}
+
+@font-face {
+  font-family: skinny2;
+  src: url(nectarBold.otf);
+}
+
+
+.skinny2 {
+	font-family:skinny2;
+}
+
+p{
+	margin-block-start: 0.5vw;
+    margin-block-end: 0.5vw;
+}
+
+a{
+	text-decoration:none;
+	color: black;
 }
