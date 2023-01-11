@@ -154,7 +154,7 @@ box-shadow: inset 0 0 30px #00f;
 }
 #submitButton:hover{
 	background-raduis: 5%;
-	background: #9CD1FF;
+	background: lightblue;
 }
 
 
@@ -183,5 +183,5 @@ box-shadow: inset 0 0 30px #00f;
 }
 #submitButton2:hover{
 	background-raduis: 5%;
-	background: #9CD1FF;
+	background:lightblue;
 }

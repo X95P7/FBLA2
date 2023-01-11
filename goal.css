@@ -1,5 +1,5 @@
 .box{
-		height:40vw;
+		height:30vw;
 margin: 5% 0 5% 0;
    /*padding: 3vw 5vw 3vw 5vw;  */
 background-color: white;
@@ -61,11 +61,11 @@ background-attachment: fixed;
 
 
 .amLeft:hover .aboutButton{
-background-color: #9CD1FF;
+background-color: lightblue;
 margin-left: 5vw;}
 
 .amRight2:hover .aboutButton{
-background-color: #9CD1FF;
+background-color: lightblue;
 margin-left: 5vw;}
 
 
