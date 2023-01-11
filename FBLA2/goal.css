@@ -1,0 +1,86 @@
+.box{
+		height:30vw;
+margin: 5% 0 5% 0;
+   /*padding: 3vw 5vw 3vw 5vw;  */
+background-color: white;
+box-shadow: 0vw 0vw 4vw #d6d6d6;	
+transition: 0.5s;
+align-items: center;
+display:flex;
+justify-content: space-around;
+position: relative;
+box-shadow: 2vw 2vw 20vw #d6d6d6;
+border-radius: 1vw;
+overflow: hidden;
+
+background-size:cover;
+background-attachment: fixed;
+	}
+
+
+.amLeft{
+	width:70%;
+	height:100%;
+	transition: 0.5s;
+}
+
+.whoAm{
+	margin-left: 5%; 
+	font-family: skinny2; 
+	font-size: 6vw;
+	text-align: center;
+}
+
+
+
+.amRight{
+	width: 30%;
+	height:100%;
+	  background-size: cover;
+
+	background-position:right;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+}
+
+.amtext {
+	float: left;
+	width :86%;
+	margin-left: 7%; 
+	font-size: 1.6vw;
+}
+
+.amImg{
+    text-align: center;
+	width: 100%;
+	height:100%;
+	
+}
+
+
+.amLeft:hover .aboutButton{
+background-color: lightblue;
+margin-left: 5vw;}
+
+.amRight2:hover .aboutButton{
+background-color: lightblue;
+margin-left: 5vw;}
+
+
+
+.amRight2{
+	width: 70%;
+	height:100%;
+
+}
+
+.amLeft2{
+	width: 30%;
+	height:100%;
+		  background-size: cover;
+
+	background-position:right;
+
+}
