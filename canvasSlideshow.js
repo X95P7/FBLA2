@@ -92,8 +92,8 @@ function drawMain(){
 	ctx.font = pTpG(5,"w") + "px skinny";
 				ctx.globalAlpha = 1;
 				ctx.fillStyle = "white";
-				var adjust = ctx.measureText("There's Bueaty in evertything").width * 1.1;
-				ctx.fillText("There's Bueaty in evertything", (pTpG(100,"w") - adjust) / 2,pTpG(55,"h"));
+				var adjust = ctx.measureText("There's Beauty in evertything").width * 1.1;
+				ctx.fillText("There's Beauty in evertything", (pTpG(100,"w") - adjust) / 2,pTpG(55,"h"));
 }
 
 function randomImg(){

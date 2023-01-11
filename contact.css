@@ -51,7 +51,7 @@ background-attachment: fixed;
 	top: 0;
 	 left:0;
 	width: 100%;
-	height:50%;
+	height:100%;
 	display: flex;
 	justify-content: space-around;
     flex-direction: column;
@@ -154,7 +154,7 @@ box-shadow: inset 0 0 30px #00f;
 }
 #submitButton:hover{
 	background-raduis: 5%;
-	background: lightblue;
+	background: #9CD1FF;
 }
 
 
@@ -164,6 +164,24 @@ box-shadow: inset 0 0 30px #00f;
 	display: flex;
 	justify-content: center;
 	align-items:center;
-	
 }
 
+#newsletter{
+	text-align:center;
+		z-index: 3;
+}
+
+
+#submitButton2{
+	font-size: 2vw;
+	border: none;
+	background-color: lightgray;
+	font-family: skinny2;
+	padding: 1%;
+	margin: 2%;
+	transition:0.5s;
+}
+#submitButton2:hover{
+	background-raduis: 5%;
+	background: #9CD1FF;
+}
