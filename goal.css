@@ -36,12 +36,13 @@ background-attachment: fixed;
 .amRight{
 	width: 30%;
 	height:100%;
-	  background-size: 35%;
-	background-attachment:fixed;
+	  background-size: cover;
+
 	background-position:right;
 	display:flex;
-	justify-content: center;
+	justify-content:center;
 	align-items:center;
+
 }
 
 .amtext {
@@ -60,11 +61,11 @@ background-attachment: fixed;
 
 
 .amLeft:hover .aboutButton{
-background-color: lightblue;
+background-color: #9CD1FF;
 margin-left: 5vw;}
 
 .amRight2:hover .aboutButton{
-background-color: lightblue;
+background-color: #9CD1FF;
 margin-left: 5vw;}
 
 
@@ -78,7 +79,8 @@ margin-left: 5vw;}
 .amLeft2{
 	width: 30%;
 	height:100%;
-	  background-size: 35%;
-	background-attachment:fixed;
-	background-position:center;
+		  background-size: cover;
+
+	background-position:right;
+
 }
