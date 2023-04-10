@@ -5,12 +5,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- social fonts -->
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <script src="contact.js"></script>
-<title> FBLA 2</title>
+<script src="animation.js"></script>
+<title>CSP: Contact</title>
 
 
 </head>
 				
-<body onload="onLoad()">		
+<body onload="onLoad(), setAnimations()">		
+
+<div id="hiddenHeader">
+	<img src="Logo.png" id="headerLogo">
+	</div>
+
 
 <div id="header">
 	<div id="headerLogoWrapper">
@@ -49,7 +55,7 @@
 						
 							<div id="selectorButton">
 								<button id="SBmessage" class="SButton" onclick="clickMessage()" type="button">Send me a message</button>
-								<button id="SBorder" class="SButton" onclick="clickOrder()" type="button">Create an appoitment</button>
+								<button id="SBorder" class="SButton" onclick="clickOrder()" type="button">Create an appointment</button>
 							</div>
 						
 						<div id="system">
@@ -105,11 +111,11 @@
 				<div id="contactSocial">
 				
 					<div class="social">  
-							<a id="insta" href="https://www.instagram.com/clearskyphotography22/" class="fa fa-instagram"> <span style="font-family: 'Oswald';"> Instagram</span></a>
+							<a id="insta" href="https://www.instagram.com/bobscomputerclub5/" class="fa fa-instagram"> <span style="font-family: 'Oswald';"> Instagram</span></a>
 					</div>
 						
 					<div class="social">  
-							<a id="Twitter" href="https://twitter.com/XD04880166" class="fa fa-twitter"> <span style="font-family: 'Oswald';"> Twitter </span></a>
+							<a id="Twitter" href="https://twitter.com/BobsCmpterClub" class="fa fa-twitter"> <span style="font-family: 'Oswald';"> Twitter </span></a>
 					</div>
 						
 						

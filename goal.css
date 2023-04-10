@@ -9,12 +9,16 @@ align-items: center;
 display:flex;
 justify-content: space-around;
 position: relative;
-box-shadow: 2vw 2vw 20vw #d6d6d6;
+box-shadow: 2vw 2vw 2vw #919191;
 border-radius: 1vw;
 overflow: hidden;
 
 background-size:cover;
 background-attachment: fixed;
+	}
+	
+	.box:hover{
+		border-radius: 2vw;
 	}
 
 

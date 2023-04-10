@@ -4,12 +4,17 @@
 <link rel="stylesheet" type="text/css" href="goal.css">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <script src="canvasSlideshow.js"></script>
-<title> FBLA 2</title>
+<script src="animation.js"></script>
+<title>CSP: Home</title>
 
 
 </head>
 				
-<body onload="onLoad()">		
+<body onload="onLoad(), setAnimations()">		
+
+<div id="hiddenHeader">
+	<img src="Logo.png" id="headerLogo">
+	</div>
 
 <div id="header">
 	<div id="headerLogoWrapper">
@@ -24,6 +29,8 @@
 			<a class="headerButton" id="headerContact" href="contact.html">Contact</a>
 	</div>
 </div>
+
+
 
 	
 	<div class="box" style="height: 30vw;">
@@ -49,7 +56,7 @@
 </div>
 
 
-<div class="box" style="height: 25vw;">
+<div class="box Fadeleft" style="height: 25vw;">
 		<div  class="amLeft2" style="background-image: url('Light/ll1.jpg')">		</div>
 				<a href="portfolio.html" id="linkGoal" class="normalA"> 
 	<div class="amRight2">
@@ -68,12 +75,12 @@
 	</div>	
 
 
-	<div id="slideshow">
+	<div id="slideshow" class="Faderight">
 		<canvas id="slideshowCanvas"></canvas>
 	</div>
 
 
-	<div class="box" style="height: 30vw;">
+	<div class="box Fadeleft" style="height: 30vw;">
 		<div  class="amLeft">	
 		
 				<div class="whoAm">
@@ -81,7 +88,7 @@
 				</div>
 					
 				<div class="amtext skinny2">
-					<p class="tab"> Want to send us a message or request a photoshoot? Here’s the place to do it just click this button and fill out the form and we’ll contact you shortly, while your at it you can check out our social media too! </p> 
+					<p class="tab"> Want to send us a message or request a photoshoot? Here’s the place to do it. Just click this button and fill out the form and we’ll contact you shortly, while you're at it you can check out our social media too! </p> 
 				</div>
 			
 		</div>
@@ -89,17 +96,15 @@
 	<div class="amRight" style="background-image: url('Light/ll10.jpg')">
 				
 				<a href='contact.html' class="cardButtonDiv">
-				<div class="cardButtonDiv">
+				<div class="magicButton">
 				
-						<img class="magicButton" src="arrow2Right.png">
-				
-				</div></a>
-	</div>	
+	</div>	</a>
 	
+</div>
 </div>
 
 
-<div class="box" style="height: 35vw;">
+<div class="box Faderight" style="height: 35vw;">
 		<div  class="amLeft2" style="background-image: url('Pine/pp8.jpg')">		</div>
 				<a href="goal.html" id="linkGoal" class="normalA"> 
 	<div class="amRight2">
@@ -121,14 +126,14 @@
 	
 <div id="pagesTable"> 
 
-		<a href="goal.html" class="tableBox">
+		<a href="goal.html" class="tableBox Faderight">
 			<div id="tableBox1">
 				<h3 class="tableText"> My Goal</h3>
 				<p class="tableText2">Click here for more!</p>
 			</div>
 		</a>
 	
-		<a href="portfolio.html" class="tableBox">
+		<a href="portfolio.html" class="tableBox Faderight">
 			<div id="tableBox2" >
 				<h3 class="tableText">Portfolios</h3>
 				<p class="tableText2">Click here for more!</p>
@@ -136,7 +141,7 @@
 		</a>
 	
 	
-		<a href="contact.html" class="tableBox">
+		<a href="contact.html" class="tableBox Faderight">
 			<div id="tableBox3">
 				<h3 class="tableText">Contact</h3>
 				<p class="tableText2">Click here for more!</p>
@@ -145,7 +150,7 @@
 	
 </div>  
 
-<div class="box" style="height: 30vw;">
+<div class="box Fadeleft" style="height: 30vw;">
 		<div  class="amLeft2" style="background-image: url('me2.jpg')">		</div>
 				<a href="aboutme.html" id="linkGoal" class="normalA"> 
 	<div class="amRight2">

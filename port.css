@@ -70,7 +70,7 @@
 	margin-top: 3vh;
 	height: 0%;
 	transition: 0.5s;
-	overflow: hidden;
+
 	display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -85,7 +85,7 @@
 
 .buttonLeft{
 	float:left;
-	display:flex;
+	display:none;
 	width: 15%;
 	align-items:center;
 	justify-content:center;
@@ -93,7 +93,7 @@
 
 .buttonRight{
 	float:right;
-	display:flex;
+	display:none;
 	width: 15%;
 	align-items:center;
 	justify-content:center;
@@ -133,24 +133,77 @@ margin: -0.13vw 0px 0px -0.16vw;
 
 
 .imagesH{
+	top: 30%;
 	width:100%;
 	height:100%;
 	position: absolute;
 	left: 0;
-	top: 0;
 	transition: 0.9s;
 }
 
 .imagesP{
+	top: 15%;
 	position: absolute;
 	height:100%;
 	left: 23.1%;
-	top: 0;
 	transition: 0.9s;
+	width: 54%;
 }
 
 .show{
+		top: 0%;
 		opacity:1;
+}
+
+.leftSlide{
+	left: 80%;
+	z-index: -5;
+	opacity:0.35;
+	width: 40%;
+}
+
+	.leftSlide.imagesP{
+	height: 72%;
+}
+
+	.leftSlide.imagesH{
+	height: 40%;
+	}
+
+
+
+
+.rightSlide{
+	left: -20.1%;
+	z-index: -5;
+	opacity:0.35;
+	width: 40%;
+		height: auto;
+}
+
+	.rightSlide.imagesP{
+	height: 72%;
+}
+
+	.rightSlide.imagesH{
+	height: 40%;
+	}
+
+
+.leftSlide2{
+	left: 120%;
+	z-index: -5;
+	opacity:0;
+	width: 40%;
+	height: auto;
+}
+
+.rightSlide2{
+	left: -50%;
+	z-index: -5;
+	opacity:0;
+	width: 40%;
+	height: auto;
 }
 
 p{
