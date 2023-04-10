@@ -11,6 +11,8 @@ function toggleHeight(obj){
 		wrapper.classList.add("h40");
 		document.getElementById("b" + num).style.height = "40vh";
 		document.getElementById("port" + num + "Slideshow").style.height = "0%";
+		document.getElementById("port" + num + "ButtonLeft").style.display = "none";
+		document.getElementById("port" + num + "ButtonRight").style.display = "none";
 		//document.getElementById("port" + num + "Slideshow").classList.add("hidden");
 	}
 	else{
@@ -18,6 +20,8 @@ function toggleHeight(obj){
 		wrapper.classList.add("h80");
 		document.getElementById("b" + num).style.height = "25%";
 		document.getElementById("port" + num + "Slideshow").style.height = "45vw";
+		document.getElementById("port" + num + "ButtonLeft").style.display = "flex";
+		document.getElementById("port" + num + "ButtonRight").style.display = "flex";
 		//document.getElementById("port" + num + "Slideshow").classList.remove("hidden");
 		
 	}
@@ -50,12 +54,20 @@ function slideshow(me){
 	//find whihc one is not hidden
 	var shown  = 0;
 	for(var i = 0; i < withinReason.length; i++){
-		if(!withinReason[i].classList.contains("hidden")){
+		if(withinReason[i].classList.contains("show")){
 			withinReason[i].classList.remove("show");
 			withinReason[i].classList.add("hidden");
-			
 			//withinCircle[i].classList.remove("green");
 			shown = i;
+		}
+		
+		if(!withinReason[i].classList.contains("hidden")){
+			withinReason[i].classList.remove("leftSlide");
+			withinReason[i].classList.remove("rightSlide");
+				withinReason[i].classList.remove("leftSlide2");
+			withinReason[i].classList.remove("rightSlide2");
+			withinReason[i].classList.add("hidden");
+			//withinCircle[i].classList.remove("green");
 		}
 	}
 
@@ -76,9 +88,24 @@ function slideshow(me){
 			shown -= 1;
 		}
 	}
+var listLength = withinReason.length;
+
+console.log(shown);
 
 	 withinReason[shown].classList.remove("hidden");
 	 withinReason[shown].classList.add("show");
+	 
+	 withinReason[(shown - 1 + listLength) % listLength].classList.remove("hidden");
+	 withinReason[(shown - 1 + listLength) % listLength].classList.add("leftSlide");
+	 
+	 withinReason[(shown + 1) % listLength].classList.remove("hidden");
+	 withinReason[(shown + 1) % listLength].classList.add("rightSlide");
+	 
+	 	 withinReason[(shown - 2 + listLength) % listLength].classList.remove("hidden");
+	 withinReason[(shown - 2 + listLength) % listLength].classList.add("leftSlide2");
+	 
+	 withinReason[(shown + 2) % listLength].classList.remove("hidden");
+	 withinReason[(shown + 2) % listLength].classList.add("rightSlide2");
 	 
 	 //withinCircle[shown].classList.add("green");
 	

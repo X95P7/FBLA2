@@ -4,10 +4,15 @@
 <link rel="stylesheet" type="text/css" href="port.css">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <script src="port.js"></script>
-<title> FBLA 2</title>
+<script src="animation.js"></script>
+<title>CSP: Portfolios</title>
 </head>
 				
-<body onload="">		
+<body onload="setAnimations()">
+
+<div id="hiddenHeader">
+	<img src="Logo.png" id="headerLogo">
+	</div>		
 
 <div id="header">
 	<div id="headerLogoWrapper">
@@ -39,17 +44,17 @@
 				
 				<div id="port1Images" class="portImages">
 				
-					<img id="11" src="Pine/pp1.jpg" class="imagesP hidden">
+					<img id="11" src="Pine/pp1.jpg" class="imagesP leftSlide">
 					<img id="12" src="Pine/pp2.jpg" class="imagesH show">
-					<img id="13" src="Pine/pp3.jpg" class="imagesH hidden">
-					<img id="14" src="Pine/pp4.jpg" class="imagesH hidden">
+					<img id="13" src="Pine/pp3.jpg" class="imagesH rightSlide">
+					<img id="14" src="Pine/pp4.jpg" class="imagesH rightSlide2">
 					<img id="15" src="Pine/pp5.jpg" class="imagesH hidden">
 					<img id="16" src="Pine/pp6.jpg" class="imagesH hidden">
 					<img id="17" src="Pine/pp7.jpg" class="imagesH hidden">
 					<img id="18" src="Pine/pp8.jpg" class="imagesP hidden">
 					<img id="10" src="Pine/pp9.jpg" class="imagesH hidden">
 					<img id="110" src="Pine/pp10.jpg" class="imagesH hidden">
-					<img id="111" src="Pine/pp11.jpg" class="imagesH hidden">
+					<img id="111" src="Pine/pp11.jpg" class="imagesH leftSlide2">
 				
 				</div>
 				
@@ -57,10 +62,10 @@
 					<button class="buttonPort"  id="ButtonR1" onclick="slideshow(this)"> <img src="arrowRight.png" style="width:60%"> </button>
 				</div>
 				
-				<div id="port1Text" class="niceText">
+				<!-- <div id="port1Text" class="niceText">
 					<p style="color:black;"> Getting a Christmas tree with my family; just a few pictures I took along the way.
 </p>
-				</div>
+				</div> -->
 		</div>
 	</div>
 	
@@ -80,7 +85,7 @@
 				<div id="port2Images" class="portImages">
 					
 				
-					<img id="21" src="Light/ll1.jpg" class="imagesP hidden">
+					<img id="21" src="Light/ll1.jpg" class="imagesP rightSlide2">
 					<img id="22" src="Light/ll2.jpg" class="imagesP hidden">
 					<img id="23" src="Light/ll3.jpg" class="imagesP hidden">
 					<img id="24" src="Light/ll4.jpg" class="imagesP hidden">
@@ -100,10 +105,10 @@
 					<img id="218" src="Light/ll18.jpg" class="imagesH hidden">
 					<img id="219" src="Light/ll19.jpg" class="imagesH hidden">
 					<img id="220" src="Light/ll20.jpg" class="imagesP hidden">
-					<img id="221" src="Light/ll21.jpg" class="imagesH hidden">
-					<img id="222" src="Light/ll22.jpg" class="imagesP hidden">
+					<img id="221" src="Light/ll21.jpg" class="imagesH leftSlide2">
+					<img id="222" src="Light/ll22.jpg" class="imagesP leftSlide">
 					<img id="223" src="Light/ll23.jpg" class="imagesH show">
-					<img id="224" src="Light/ll24.jpg" class="imagesP hidden">
+					<img id="224" src="Light/ll24.jpg" class="imagesP rightSlide">
 					
 				</div>
 	
@@ -111,9 +116,9 @@
 					<button class="buttonPort"  id="ButtonR2" onclick="slideshow(this)"> <img src="arrowRight.png" style="width:60%"> </button>
 				</div>
 				
-				<div id="port2Text" class="niceText" >
-					<p style="color:black;">  Went on a walk through the botanic garden’s Lightscape event. A beautiful combination of nature and art.</p>
-				</div>
+			<!--	<div id="port2Text" class="niceText" >
+					<p style="color:black;">  Replace this with the circle thing</p>
+				</div> -->
 		</div>
 	</div>
 	
@@ -133,8 +138,8 @@
 					
 				
 					<img id="31" src="Snow/ss1.jpg" class="imagesH show">
-					<img id="32" src="Snow/ss2.jpg" class="imagesH hidden">
-					<img id="33" src="Snow/ss3.jpg" class="imagesH hidden">
+					<img id="32" src="Snow/ss2.jpg" class="imagesH rightSlide">
+					<img id="33" src="Snow/ss3.jpg" class="imagesH rightSlide2">
 					<img id="34" src="Snow/ss4.jpg" class="imagesH hidden">
 					<img id="35" src="Snow/ss5.jpg" class="imagesH hidden">
 					<img id="36" src="Snow/ss6.jpg" class="imagesH hidden">
@@ -142,8 +147,8 @@
 					<img id="38" src="Snow/ss8.jpg" class="imagesP hidden">
 					<img id="39" src="Snow/ss9.jpg" class="imagesH hidden">
 					<img id="310" src="Snow/ss10.jpg" class="imagesH hidden">
-					<img id="311" src="Snow/ss11.jpg" class="imagesP hidden">
-					<img id="312" src="Snow/ss12.jpg" class="imagesP hidden">
+					<img id="311" src="Snow/ss11.jpg" class="imagesP leftSlide2">
+					<img id="312" src="Snow/ss12.jpg" class="imagesP leftSlide">
 				
 					
 				</div>
@@ -152,9 +157,9 @@
 					<button class="buttonPort"  id="ButtonR3" onclick="slideshow(this)"> <img src="arrowRight.png" style="width:60%"> </button>
 				</div>
 				
-				<div id="port3Text" class="niceText">
+				<!-- <div id="port3Text" class="niceText">
 					<p style="color:black;"> Just some winter pictures from Wisconsin</p>
-				</div>
+				</div> -->
 		</div>
 	</div>
 	
